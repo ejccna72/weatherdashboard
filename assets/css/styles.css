@@ -1,0 +1,10 @@
+/* UL Style */
+ul {
+    list-style: none;
+}
+
+/* LI Style */
+li {
+    padding-left: 12px;
+    border-bottom: 2px dashed darkblue;
+}
