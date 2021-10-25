@@ -8,3 +8,8 @@ li {
     padding-left: 12px;
     border-bottom: 2px dashed darkblue;
 }
+
+/* Card Title Style */
+.cardtitle {
+    font-size: 20px;
+}
