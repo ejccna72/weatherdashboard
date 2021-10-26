@@ -1,6 +1,6 @@
 // First define the variables
 // Let's start with the API key for OpenWeather
-    var apikey = "c87c1c241924822ddc08c72333b04ae7"
+    var apikey = "8bc4d191da8bb99b847410a7f5c643bc"
 
     // And now the search button
     var sbutton = $(".sbutton");
