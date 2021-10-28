@@ -10,8 +10,9 @@ const sTMP = document.querySelector(".tMP");
 const sWTR = document.querySelector(".wTR");
 const shLO = document.querySelector(".hLO");
 const aCRD = document.querySelector(".hDN");
-const suVI = document.querySelector(".uVi");
-const sHMD = document.querySelector(".hMD")
+const sHMD = document.querySelector(".hMD");
+const sWND = document.querySelector(".wND");
+const sVIS = document.querySelector('.vIS');
 
 
 function myQuery(e){
@@ -23,30 +24,29 @@ function myQuery(e){
    
         if(response.cod === "404"){
                  
-        aCRD.classList.add('card');
+        aCRD.classList.add;
     
         sCTY.innerText = 'Invalid City';
     
-        sTMP.innerText = 'N/A';
-    
-        sWTR.innerText = 'N/A';
-    
-        shLO.innerText = 'N/A' + '/'+ 'N/A';
+;
         
-        sHMD.innerText = 'N/A' + '/'+ 'N/A';
-        }else{
+    }else{
             
-        aCRD.classList.add('card');
+        aCRD.classList.add;
     
-        sCTY.innerText = response['name'] + ',' + response['sys']['country'];
+        sCTY.innerText = response['name'] + ', ' + response['sys']['country'];
     
-        sTMP.innerText = 'Current Temperature: ' + response['main']['temp'] + String.fromCharCode(176) + 'F';
+        sTMP.innerText = 'Current Temp: ' + response['main']['temp'] + String.fromCharCode(176) + 'F';
     
         sWTR.innerText = 'Current Conditions: ' + response.weather[0].main;
     
-        shLO.innerText = response.main.temp_max + String.fromCharCode(176) + 'F High'+ '/'+ response.main.temp_min + String.fromCharCode(176)+ 'F Low';
+        shLO.innerText = `High: ${response.main.temp_max}${String.fromCharCode(176)}F / Low: ${response.main.temp_min}${String.fromCharCode(176)}F`;
         
-        sHMD.innerText = 'Humidity: ' + response['main']['humidity'] + '%'
+        sHMD.innerText = 'Humidity: ' + response['main']['humidity'] + '%';
+    
+        sWND.innertText = response['wind']['speed'];
+       
+        sVIS.innerText = 'Visibility: ' + response['visibility'] + "'"
     }
 }
 }

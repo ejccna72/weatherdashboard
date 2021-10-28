@@ -1,10 +1,9 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
+
+h2 {
+    color: black;
+    font-style: italic;
 }
-
-
  
 main {
     display: flex;
@@ -14,7 +13,8 @@ main {
     padding: 15px 25px;
     margin: 15px 10px;
     justify-content: space-around;
-  }
+    height: auto;
+}
 
 .lCN .cTY {
     font-size: 20px;
@@ -23,36 +23,36 @@ main {
     font-weight: bold;
 }
 
-.cRT .tMP {
+
+
+.cRT {
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: black;
     font-size: 15px;
+}
+
+.cRT .tMP {
     margin-bottom: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .cRT .wTR {
-    color: rgba(54, 53, 53, 0.863);
-    font-size: 15px;
     margin-bottom: 10%;
 }
 
 .cRT .hLO {
-    font-size: 15px;
-    color: rgb(0, 0, 0);
     margin-bottom: 10%;
 }
 
 .cRT .hMD {
-    font-size: 15px;
-    color: rgb(0, 0, 0);
     margin-bottom: 10%;
 }
-.cRD {
-    background-color: rgba(255, 255, 255, 0.692);
-    padding: 15px 60px;
-    padding-bottom: 40px;
-    box-shadow: black 5px 5px 12px;
-  }
+
+.cRT .wND {
+    margin-bottom: 10%;
+}
+
 
 .fiveday {
   
