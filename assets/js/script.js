@@ -34,13 +34,13 @@ function myQuery(e){
             
         aCRD.classList.add('card');
     
-        sCTY.innerText = response['name'] + ','+ response['sys']['country'];
+        sCTY.innerText = response['name'] + ',' + response['sys']['country'];
     
-        sTMP.innerText = response['main']['temp'] + String.fromCharCode(176) + 'c';
+        sTMP.innerText = 'Current Temperature: ' + response['main']['temp'] + String.fromCharCode(176) + 'F';
     
-        sWTR.innerText = response.weather[0].main;
+        sWTR.innerText = 'Current Conditions: ' + response.weather[0].main;
     
-        shLO.innerText = response.main.temp_max + String.fromCharCode(176) + 'c'+ '/'+ response.main.temp_min + String.fromCharCode(176)+ 'c'
+        shLO.innerText = response.main.temp_max + String.fromCharCode(176) + 'F High'+ '/'+ response.main.temp_min + String.fromCharCode(176)+ 'F Low'
         }
 }
 }

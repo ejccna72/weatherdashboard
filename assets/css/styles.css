@@ -4,3 +4,73 @@
     margin: 0;
 }
 
+
+ 
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 15px 25px;
+    margin: 15px 10px;
+    justify-content: space-around;
+  }
+
+.lCN .cTY {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10%;
+    font-weight: bold;
+}
+
+.cRT .tMP {
+    font-size: 15px;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cRT .wTR {
+    color: rgba(54, 53, 53, 0.863);
+    font-size: 15px;
+    margin-bottom: 10%;
+}
+
+.cRT .hLO {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10%;
+}
+
+.cRD {
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 15px 60px;
+    padding-bottom: 40px;
+    box-shadow: black 5px 5px 12px;
+  }
+
+.fiveday {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px
+}
+
+  @media (max-width: 450px) {
+    header input {
+      font-size: 1rem;
+    }
+  
+    .lCN .cTY {
+      font-size: 2rem;
+    }
+    .cRT .tMP {
+      font-size: 3rem;
+    }
+    .cRT .hLO {
+      font-size: 1rem;
+    }
+  }
