@@ -3,7 +3,8 @@
 
 <head>
     <!-- Necessary meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
 
     <!-- Page Title -->
@@ -18,64 +19,30 @@
 
 <body>
 
-    <!-- Setup Main Container -->
-    <div class="container-fluid">
-        <div class="card">
-            <!-- First Page Header-->
-            <div class="card-body text-center bg-primary text-white">
-                <h1>Weather Dashboard</h1>
-            </div>
+    <header class="card-body text-center bg-primary text-white">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div>
+            <h1>Search for a City</h1>
+            <input type="text" autocomplete="off" class="sBX" placeholder="Enter Name of City">
         </div>
-
-        <!-- Adding container -->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="card-body text-center">
-                        <!-- Placeholder for searching-->
-                        <div class="card" style="width: 16rem;">
-                            <div class="card-body bg-light">
-                                <h5 class="card-subtitle mb-2 text-muted">Let's Search For A City</h5>
-                                <div class="input-group mb-3">
-                                    <input type="text" placeholder="Enter A City Name" class="form-control sinput" aria-label="Recipient's Username" aria-describedby="button-addon">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary bg-success sbutton" type="button"
-                                            id="button-addon"><i class="fas fa-search"></i></button>
-                                    </div>        
-                                </div>
-                                <ul class="list-group">
-
-                                </ul>
-                            </div>
-                        </div>               
-                    </div>
-                </div>
-                    <div class="col mt-4 mr-5">
-                        <div class="card currentCard pb-2 pt-1">
-                            <h6 class="cardtitle mt-2 text-center">Current Outlook</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mt-4">
-                            <div class="card pb-5 pl-5">
-                                <h6 class="cardtitle mt-2 mr-5">5-Day Outlook</h6>
-                                <div class="row">
-                                    <div class="col">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="hDN">
+            <section class="lCN">
+                <div class="cTY"></div>
+            </section>
+            <div class="cRT">
+                <div class="tMP"></div>
+                <div class="wTR"></div>
+                <div class="hLO"></div>
+                <div class="uVI"></div>
             </div>
         </div>  
-    </div>
+    </main>
 
 
 
     <script src="./assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 
 </body>
