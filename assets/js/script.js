@@ -10,6 +10,8 @@ const sTMP = document.querySelector(".tMP");
 const sWTR = document.querySelector(".wTR");
 const shLO = document.querySelector(".hLO");
 const aCRD = document.querySelector(".hDN");
+const suVI = document.querySelector(".uVi");
+const sHMD = document.querySelector(".hMD")
 
 
 function myQuery(e){
@@ -29,7 +31,9 @@ function myQuery(e){
     
         sWTR.innerText = 'N/A';
     
-        shLO.innerText = 'N/A' + '/'+ 'N/A';      
+        shLO.innerText = 'N/A' + '/'+ 'N/A';
+        
+        sHMD.innerText = 'N/A' + '/'+ 'N/A';
         }else{
             
         aCRD.classList.add('card');
@@ -40,8 +44,13 @@ function myQuery(e){
     
         sWTR.innerText = 'Current Conditions: ' + response.weather[0].main;
     
-        shLO.innerText = response.main.temp_max + String.fromCharCode(176) + 'F High'+ '/'+ response.main.temp_min + String.fromCharCode(176)+ 'F Low'
-        }
+        shLO.innerText = response.main.temp_max + String.fromCharCode(176) + 'F High'+ '/'+ response.main.temp_min + String.fromCharCode(176)+ 'F Low';
+        
+        sHMD.innerText = 'Humidity: ' + response['main']['humidity'] + '%'
+    }
 }
 }
+
+
+
 sBOX.addEventListener('keypress', myQuery);
