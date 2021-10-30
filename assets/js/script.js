@@ -79,7 +79,7 @@ function myQuery(e){
         
         sHMD.innerText = 'Humidity: ' + response['main']['humidity'] + '%';
     
-        sWND.innertText = 'Wind: ' + response['wind']['speed'] + ' Deg: ' + response['wind']['deg'] + String.fromCharCode(176);
+        sWND.innerText = 'Wind: ' + response['wind']['speed'] + ' Deg: ' + response['wind']['deg'] + String.fromCharCode(176);
        
         sVIS.innerText = 'Visibility: ' + response['visibility'] + "'"
     }
