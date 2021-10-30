@@ -63,19 +63,3 @@ main {
     margin-left: 10%;
     margin-top: 10px
 }
-
-  @media (max-width: 450px) {
-    header input {
-      font-size: 1rem;
-    }
-  
-    .lCN .cTY {
-      font-size: 2rem;
-    }
-    .cRT .tMP {
-      font-size: 3rem;
-    }
-    .cRT .hLO {
-      font-size: 1rem;
-    }
-  }
