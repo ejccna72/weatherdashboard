@@ -52,23 +52,19 @@ const s55VIS = document.querySelector('.five-5vIS');
 
 function myQuery(e){
     if(e.keyCode == 13){
-        fetch(`${api.base}weather?q=`+sBOX.value+`&units=imperial&appid=${api.key}`).then(response => response.json()).then(dataDisplay)
-        ;
+        fetch(`${api.base}weather?q=`+sBOX.value+`&units=imperial&appid=${api.key}`).then(response => response.json()).then(dataDisplay);
     }
     function dataDisplay(response){
    
-        if(response.cod === "404"){
-                 
-        aCRD.classList.add;
-    
-        sCTY.innerText = 'Invalid City';
-    
-;
-        
-    }else{
+        if(response.cod === "404"){     
+            aCRD.classList.add;
+            sCTY.innerText = 'Invalid City';
             
-        aCRD.classList.add;
-    
+            
+        }else{
+            
+            aCRD.classList.add;
+            
         sCTY.innerText = response['name'] + ', ' + response['sys']['country'];
     
         sTMP.innerText = 'Current Temp: ' + response['main']['temp'] + String.fromCharCode(176) + 'F';
